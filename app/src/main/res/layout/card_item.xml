@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardItemPlanet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgItemIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="12dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgItemIcon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtItemJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this title"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/txtItemWaktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="this time"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
